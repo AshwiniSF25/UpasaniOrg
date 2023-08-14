@@ -16,7 +16,7 @@ export default class FpsOpportunities extends LightningElement
            
      ];
 
-     @wire (getOpportunityByRecordTypeId, {recordId: '$recordId', recordTypeId :'0128c000002wSvuAAE' }) 
+     @wire (getOpportunityByRecordTypeId, {recordId : '$recordId', recordTypeId :'0128c000002wSvuAAE' }) 
      wiredopps({data, error})
      {
          if(data)
