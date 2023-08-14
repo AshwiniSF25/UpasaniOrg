@@ -1,0 +1,29 @@
+<template>
+    <lightning-combobox
+      name="recordSelection"
+      label="Select a Record"
+      value={selectedRecordId}
+      options={recordOptions}
+      onchange={handleRecordSelection}
+    ></lightning-combobox>
+  
+    <template if:true={selectedRecords.length}>
+      <div class="pill-container">
+        <template for:each={selectedRecords} for:item="record">
+          <div key={record.value} class="pill">
+            {record.label}
+            <lightning-icon
+              icon-name="utility:close"
+              size="x-small"
+              onclick={handleRemoveRecord}
+              data-record-id={record.value}
+              alternative-text="Remove"
+            ></lightning-icon>
+          </div>
+        </template>
+      </div>
+    </template>
+  </template>
+  
+ 
+  

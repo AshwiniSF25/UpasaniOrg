@@ -1,0 +1,7 @@
+<apex:page controller="OnClickButton" action="{!doProcessOnClick}">
+    <div id="load" style="display:none">
+       hi 
+    </div>
+    hi everyone we are here 
+    
+</apex:page>

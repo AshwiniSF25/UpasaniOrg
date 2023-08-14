@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title="CSA Matches">
+        <p class="slds-p-horizontal_small"> These are possible CSA Matches of the contact.</p>
+        
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={CSA_Data__c.data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+
+        <p slot="footer">Thank you.</p>
+    </lightning-card>
+</template>

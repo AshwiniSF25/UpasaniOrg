@@ -1,0 +1,40 @@
+<template>
+   
+    <!-- method 1 called as direct binding  -->
+    <!-- <template for:each={wiredcontact.data} for:item="con">
+
+        <p key ={con.Id}>
+            {con.Name}
+        </p>
+    </template> -->
+    
+   <!--Method 2: Efficent way of doing of displaying data -->
+    
+
+   <template if:true={conList}> 
+        <div style="height: 200px;">
+            <lightning-datatable
+                    key-field="Id"
+                    data={conList}
+                    columns={columns}>
+                </lightning-datatable>
+            </div>
+    </template>
+    <br>
+
+
+    <template if:true={AccList}> 
+        <div style="height: 200px;">
+            <lightning-datatable
+                    key-field="Id"
+                    data={AccList}
+                    columns={columnsAcc}>
+                </lightning-datatable>
+            </div>
+    </template>
+
+    
+
+
+
+</template>

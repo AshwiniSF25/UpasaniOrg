@@ -1,0 +1,8 @@
+<apex:page >
+    //Inside stylesheet
+    <style type="text/css">
+        p { font-weight: bold; }
+    </style>
+
+    <p>This is some strong text!</p>
+</apex:page>

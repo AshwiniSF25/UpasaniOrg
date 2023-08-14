@@ -1,0 +1,8 @@
+<apex:page standardController="ETF_Trade_Stage__c" extensions="Vfcontroller">
+    <apex:pageBlock title="Hello {!$User.FirstName}!">
+        This is your new page for the controller.
+        <apex:form >
+            <apex:commandButton action="{!delete}" value="delete"/>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

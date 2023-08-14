@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-box slds-text-heading_small">
+        <lightning-card title="FPS Opportunities" icon-name="custom:custom13">
+
+            <div style="height: 300px;">
+                    <lightning-datatable
+                        key-field="id"
+                        data={oppList}
+                        columns={columns}>
+                    </lightning-datatable>
+            </div>
+
+        </lightning-card>
+    </div>
+</template>
