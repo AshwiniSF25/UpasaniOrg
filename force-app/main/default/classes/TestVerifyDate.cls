@@ -12,7 +12,8 @@ public class TestVerifyDate {
         Date result = VerifyDate.CheckDates(date1, date3);
         Date result2 = VerifyDate.CheckDates(date1, date2);
 
-        system.debug(result);
+        system.debug('Ans is : '+result);
+        
     }
 
 

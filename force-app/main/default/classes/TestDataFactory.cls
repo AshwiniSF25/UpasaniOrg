@@ -7,6 +7,7 @@ public class TestDataFactory {
             accts.add(a);
         }
         insert accts;
+        system.debug('Insertion complete');
         List<Opportunity> opps = new List<Opportunity>();
         for (Integer j=0;j<numAccts;j++) {
             Account acct = accts[j];
@@ -21,5 +22,6 @@ public class TestDataFactory {
         // Insert all opportunities for all accounts.
         insert opps;
         return accts;
+        
     }
 }

@@ -7,6 +7,7 @@ public class Book
             if (boo.CR_Certified__c == true ) 
             { 
               boo.Updated_Price__c = boo.Price__c * 2;  
+              system.debug('books are now updated');
             } 
         }
 			
