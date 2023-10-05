@@ -24,6 +24,7 @@ public class StudentsApex
         {
                 system.debug('has error rollback now');
                 system.debug('inserting now');
+                system.debug('Ashwini from mac');
                 Database.SaveResult[] srlistng = Database.insert(err);
                 system.debug(srlistng);
         }
