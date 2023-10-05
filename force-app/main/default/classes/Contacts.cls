@@ -5,6 +5,7 @@ public class Contacts {
     List<contact> listofcontacts = new List<Contact>();
     listofcontacts = [select Id, name from contact limit 10];
     system.debug('records on list are'+ listofcontacts);
+    system.debug('all done');
     
     for(Contact c :c_new)
     {
