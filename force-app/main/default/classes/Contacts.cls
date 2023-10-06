@@ -37,6 +37,7 @@ public class Contacts {
         	}
 		system.debug(toProcess.isempty());
         system.debug(toProcess);
+        system.debug('done');
         
         
 	}
